@@ -8,7 +8,7 @@
     }
   
     const iframe = document.createElement('iframe');
-    iframe.src = `https://widget.yoursaas.com/?clientId=1234567`;
+    iframe.src = `https://booking-widget-weld.vercel.app/?clientId=${clientId}`;
     iframe.style = `
       position: fixed;
       bottom: 24px;
