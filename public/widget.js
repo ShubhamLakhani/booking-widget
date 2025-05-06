@@ -1,7 +1,7 @@
 (function () {
   function initWidget() {
-    const scriptTag = document.currentScript;
-    const clientId = scriptTag.getAttribute('data-client-id');
+    const config = window.WidgetConfig || {};
+    const clientId = config.clientId;
 
     if (!clientId) {
       console.warn('[Widget] Missing data-client-id');
